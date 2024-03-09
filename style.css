@@ -20,6 +20,7 @@ nav a:hover {
 
 body {
     background-color: beige;
+    overflow: hidden;
 }
 
 #trailer {
