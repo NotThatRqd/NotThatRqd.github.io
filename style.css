@@ -1,0 +1,46 @@
+h1, h2, h3, p {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+body {
+    background-color: beige;
+}
+
+#trailer {
+    width: 9px;
+    height: 9px;
+    background-color: black;
+    border-radius: 100%;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+
+    pointer-events: none;
+}
+
+.emoji {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.apple-emoji {
+    width: 1em;
+    vertical-align: bottom;
+}
+
+.haskell-emoji {
+    width: 1em;
+    vertical-align: baseline;
+}
+
+.rust-emoji {
+    height: 1em;
+    vertical-align: bottom;
+}
