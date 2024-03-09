@@ -35,11 +35,11 @@
 
         <svg>
             <filter id="noise-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
-	            <feTurbulence type="turbulence" baseFrequency="0.2" numOctaves="4" seed="15" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence>
-	            <feSpecularLighting surfaceScale="9" specularConstant="0.6" specularExponent="20" lighting-color="#004dff" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="specularLighting">
+	            <feTurbulence type="turbulence" baseFrequency="0.2" numOctaves="4" seed="15" stitchTiles="stitch" result="turbulence"></feTurbulence>
+	            <feSpecularLighting surfaceScale="9" specularConstant="0.6" specularExponent="20" lighting-color="#004dff" in="turbulence" result="specularLighting">
     		            <feDistantLight azimuth="3" elevation="97"></feDistantLight>
   	            </feSpecularLighting>
-            <feColorMatrix type="saturate" values="0" x="0%" y="0%" width="100%" height="100%" in="specularLighting" result="colormatrix"></feColorMatrix>
+            <feColorMatrix type="saturate" values="0" in="specularLighting" result="colormatrix"></feColorMatrix>
             </filter>
         </svg>
         <script src="script.js"></script>
