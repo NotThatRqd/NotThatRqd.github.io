@@ -8,17 +8,25 @@ body {
 }
 
 #trailer {
-    width: 9px;
-    height: 9px;
-    background-color: black;
-    border-radius: 100%;
+    display: none;
+}
 
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 10000;
+@media (min-width: 1024px) {
+    #trailer {
+        display: block;
 
-    pointer-events: none;
+        width: 9px;
+        height: 9px;
+        background-color: black;
+        border-radius: 100%;
+
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 10000;
+
+        pointer-events: none;
+    }
 }
 
 .emoji {
