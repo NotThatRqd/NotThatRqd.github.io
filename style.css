@@ -21,23 +21,6 @@ body {
     background-color: beige;
 }
 
-body::before,
-body::after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: '';
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-    opacity: 30%;
-}
-
-body::before {
-    filter: url(#noise-filter);
-}
-
 #trailer {
     display: none;
 }
@@ -57,6 +40,23 @@ body::before {
         z-index: 10000;
 
         pointer-events: none;
+    }
+
+    body::before,
+    body::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        opacity: 30%;
+    }
+
+    body::before {
+        filter: url(#noise-filter);
     }
 }
 
